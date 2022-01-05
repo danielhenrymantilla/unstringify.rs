@@ -3,7 +3,7 @@ proc-macro = true
 
 [package]
 name = "unstringify"
-version = "0.1.4-rc1"
+version = "0.1.4"
 authors = [
     "Daniel Henry-Mantilla <daniel.henry.mantilla@gmail.com>",
 ]
