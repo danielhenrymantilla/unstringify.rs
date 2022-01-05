@@ -1,7 +1,16 @@
 //! # `unstringify!`
 //!
-//! See [the documentation of the macro for more info](
-//! https://docs.rs/unstringify/0.1.1/unstringify/macro.unstringify.html)
+//! See [the documentation of the macro for more info][`unstringify!`]
+
+// Fix rendering of `<details><summary>` within bulleted lists:
+// Credit for this marvelous hack go to: https://github.com/rust-lang/cargo/issues/331#issuecomment-479847157
+#![doc(html_favicon_url = "\">
+<style>
+summary {
+    display: list-item;
+}
+</style>
+<meta name=\"")]
 
 /// For compat with older versions of `rustc`.
 extern crate proc_macro;
